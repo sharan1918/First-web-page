@@ -1,0 +1,72 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#c2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(165, 12, 153);
+}
+
+.container {
+    padding: 25px;
+    padding-bottom: 100px;
+    
+}
+
+.container .heading {
+    text-align: center;
+    padding-bottom: 15px;
+    color: rgb(172, 27, 27);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.container .box-container {
+    display: grid;
+    gap: 10px;
+    font-size: 20px;
+    color: rgb(126, 43, 203);
+    
+}
+
+@media (min-width: 992px) {
+    .container .box-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container .box-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgb(169, 125, 212);
+    border-radius: 5px;
+    padding: 20px 15px;
+    text-align: justify;
+    background-color: rgb(230, 230, 230);
+}
+
+.container .box-container .box {
+    color: rgb(64, 40, 85);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
